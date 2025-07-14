@@ -1,0 +1,79 @@
+theme = "ao"
+
+[editor]
+line-number = "relative"
+cursorline = true
+true-color = true
+scrolloff = 8
+scroll-lines = 3
+mouse = false
+auto-format = true
+auto-save = true
+completion-trigger-len = 2
+completion-replace = true
+completion-timeout = 500
+rulers = [80, 120]
+gutters = ["diagnostics", "line-numbers", "spacer"]
+bufferline = "always"
+# --- TEMPORARY: Commented out statusline to bypass error ---
+# statusline = ["mode", "file-name", "file-modification-indicator", "position", "file-type", "diagnostics", "version-control"]
+color-modes = true
+idle-timeout = 1
+popup-border = "all"
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 20
+max-indent-retain = 40
+
+[editor.indent-guides]
+render = true
+character = "┆"
+skip-levels = 0
+
+[editor.lsp]
+display-inlay-hints = true
+
+[editor.inline-diagnostics]
+cursor-line = "error"
+other-lines = "warning"
+
+[editor.file-picker]
+hidden = true
+follow-symlinks = true
+deduplicate-links = true
+git-ignore = true
+parents = true
+max-depth = 4
+git-global = true
+
+[keys.normal]
+space = { s = ":toggle soft-wrap.enable", t = ":toggle true-color", f = "file_picker", b = "buffer_picker", q = ":quit", g = ":sh lazygit", w = ":write", n = ":new", p = "paste_after", d = "delete_selection", y = "yank", "C-s" = ":write", "C-q" = ":quit", "C-o" = ":open ~/.config/helix/config.toml", h = "half_page_up", l = "half_page_down" }
+C-s = ":w"
+C-q = ":q"
+C-o = ":open ~/.config/helix/config.toml"
+g = { a = "code_action" }
+H = "goto_line_start"
+L = "goto_line_end"
+J = "goto_file_end"
+K = "goto_file_start"
+C = { c = "toggle_comments" }
+
+[keys.insert]
+"C-space" = "completion"
+"C-s" = ":w"
+"C-z" = "undo"
+"C-y" = "redo"
+"C-c" = "normal_mode"
+
+[keys.select]
+"C-c" = "yank"
+"C-x" = "delete_selection"
+"C-v" = "paste_after"
+"C-a" = "select_all"
+"C-d" = "delete_selection"
