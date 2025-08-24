@@ -2,7 +2,7 @@
 
 ![Helix Editor Logo](https://img.shields.io/badge/Helix-Editor-blueviolet?style=flat-square&logo=helix) 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-![GitHub Stars](https://img.shields.io/github/stars/KrishnanKamatchi/Helix_Config?style=social)](https://github.com//KrishnanKamatchi/Helix_Config)  
+![GitHub Stars](https://img.shields.io/github/stars/KrishnanKamatchi/Helix_Config?style=social)(https://github.com//KrishnanKamatchi/Helix_Config)  
 
 ## Overview
 
